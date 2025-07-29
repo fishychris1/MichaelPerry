@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <link rel="icon" sizes="192x192" href="img/favicon.png">
+ <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
+ <link rel="apple-touch-icon" href="img/favicon.png" type="image/x-icon"/>
+ <link rel="stylesheet" type="text/css" href="/play/nav.css">
+    <!--<base href='/play/idlebreakout/game.html' />-->
+
+    <!-- Set the title bar of the page -->
+    <title>Idle Breakout</title>
+
+    <!-- Set the background colour of the document -->
+    <style>
+        body {
+            background: #000000;
+            color: #cccccc;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+
+        canvas {
+            image-rendering: pixelated;
+            -webkit-interpolation-mode: nearest-neighbor;
+            -ms-touch-action: none;
+            touch-action:none;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+
+        :-webkit-full-screen #canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        div.gm4html5 {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+
+        /* END - Login Dialog Box */
+        :-webkit-full-screen {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div algin="center" class="gm4html5" id="gm4html5">
+        <!-- Create the canvas element the game draws to -->
+        <canvas id="canvas" width="1024" height="768">
+            <p>Your browser doesn't support HTML5 canvas.</p>
+        </canvas>
+    </div>
+
+    <!-- Run the game code -->
+    <script type="text/javascript" src="Coding_BreakOut1.js"></script>
+    <script>window.onload = async function() {
+        GameMaker_Init();
+        }</script>
+    <br>
+    <br>
+    
+</body>
+
+</html>
